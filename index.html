@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Account Recovery Hub</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #08051e, #17102e, #050817);
+    color: white;
+    min-height: 100vh;
+}
+
+.container {
+    width: 92%;
+    max-width: 1150px;
+    margin: auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0;
+}
+
+.logo {
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.badge {
+    border: 1px solid #ffffff40;
+    border-radius: 20px;
+    padding: 9px 14px;
+    font-size: 12px;
+}
+
+.hero {
+    text-align: center;
+    padding: 55px 0 35px;
+}
+
+.eyebrow {
+    display: inline-block;
+    padding: 10px 15px;
+    border: 1px solid #ffffff30;
+    border-radius: 30px;
+    font-size: 12px;
+}
+
+h1 {
+    font-size: clamp(40px, 6vw, 76px);
+    margin: 25px 0 18px;
+}
+
+h1 span {
+    background: linear-gradient(90deg, #ff2b93, #ff9b22, #ffe500);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.hero p {
+    max-width: 680px;
+    margin: auto;
+    color: #d8d2e8;
+    line-height: 1.7;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 35px 0 65px;
+}
+
+.card {
+    background: #ffffff10;
+    border: 1px solid #ffffff25;
+    border-radius: 25px;
+    padding: 18px;
+}
+
+.card img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 18px;
+    margin-bottom: 18px;
+}
+
+.card h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #d4cce5;
+    font-size: 14px;
+    line-height: 1.6;
+    min-height: 70px;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 13px;
+    margin-top: 18px;
+}
+
+.instagram {
+    background: linear-gradient(90deg, #e90083, #ff8d22);
+}
+
+.snapchat {
+    background: linear-gradient(90deg, #b8a900, #ffe500);
+    color: #111;
+}
+
+.gmail {
+    background: linear-gradient(90deg, #e52c21, #1e73ff);
+}
+
+.section {
+    text-align: center;
+    padding: 10px 0 55px;
+}
+
+.section h2 {
+    font-size: 34px;
+    margin-bottom: 12px;
+}
+
+.section p {
+    color: #c7bfdc;
+}
+
+.pills {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 25px;
+}
+
+.pill {
+    border: 1px solid #ffffff2a;
+    border-radius: 99px;
+    padding: 10px 14px;
+    color: #eee;
+    font-size: 13px;
+}
+
+.cta {
+    padding: 40px 25px;
+    text-align: center;
+    border-radius: 25px;
+    border: 1px solid #ffffff25;
+    background: linear-gradient(120deg, #f000752b, #7438ff30);
+    margin-bottom: 55px;
+}
+
+.cta h2 {
+    font-size: 36px;
+    margin-bottom: 12px;
+}
+
+.cta p {
+    color: #d8d2e8;
+    margin-bottom: 22px;
+}
+
+.join-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.telegram {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background: linear-gradient(90deg, #168cff, #6b5cff);
+    font-weight: bold;
+    padding: 15px 25px;
+    border-radius: 14px;
+    margin: 5px;
+}
+
+.note {
+    font-size: 11px;
+    color: #aaa0c2;
+    margin-top: 15px;
+}
+
+footer {
+    text-align: center;
+    color: #9f96b8;
+    font-size: 12px;
+    padding-bottom: 30px;
+}
+
+@media (max-width: 850px) {
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        max-width: 520px;
+        margin: auto;
+        width: 100%;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<nav>
+    <div class="logo">🔐 Account Recovery Hub</div>
+    <div class="badge">Safe • Secure • Support</div>
+</nav>
+
+<section class="hero">
+
+    <div class="eyebrow">
+        Recovery Resources In One Place
+    </div>
+
+    <h1>
+        Recover Your <span>Account</span>
+    </h1>
+
+    <p>
+        Choose your platform to find the official recovery route
+        for login problems, locked accounts, lost access or
+        security issues.
+    </p>
+
+</section>
+
+<section class="cards">
+
+    <article class="card">
+
+        <img src="poster.png" alt="Instagram Account Recovery">
+
+        <h2>Instagram</h2>
+
+        <p>
+            Forgot password, hacked account, lost email or
+            disabled profile recovery guidance.
+        </p>
+
+        <a
+            class="btn instagram"
+            href="https://www.instagram.com/hacked/"
+            target="_blank"
+            rel="noopener"
+        >
+            Recover Instagram ↗
+        </a>
+
+    </article>
+
+    <article class="card">
+
+        <img src="snapchat.jpg" alt="Snapchat Account Recovery">
+
+        <h2>Snapchat</h2>
+
+        <p>
+            Get help with locked, suspended or inaccessible
+            Snapchat accounts through official support.
+        </p>
+
+        <a
+            class="btn snapchat"
+            href="https://help.snapchat.com/"
+            target="_blank"
+            rel="noopener"
+        >
+            Recover Snapchat ↗
+        </a>
+
+    </article>
+
+    <article class="card">
+
+        <img src="gmail.jpg" alt="Gmail Account Recovery">
+
+        <h2>Gmail</h2>
+
+        <p>
+            Recover a forgotten password, locked account or
+            lost access to your Google email.
+        </p>
+
+        <a
+            class="btn gmail"
+            href="https://accounts.google.com/signin/recovery"
+            target="_blank"
+            rel="noopener"
+        >
+            Recover Gmail ↗
+        </a>
+
+    </article>
+
+</section>
+
+<section class="section">
+
+    <h2>Common Account Issues</h2>
+
+    <p>
+        Use the official recovery process for your platform.
+    </p>
+
+    <div class="pills">
+
+        <span class="pill">Forgot Password</span>
+        <span class="pill">Hacked Account</span>
+        <span class="pill">Locked Account</span>
+        <span class="pill">Lost Email or Phone</span>
+        <span class="pill">Disabled Account</span>
+
+    </div>
+
+</section>
+
+<!-- JOIN BOTH TELEGRAM CHANNELS -->
+
+<section class="cta">
+
+    <h2>Join Our Recovery Community</h2>
+
+    <p>
+        Join our Telegram channels for account recovery
+        updates and guidance.
+    </p>
+
+    <div class="join-buttons">
+
+        <!-- TELEGRAM CHANNEL 1 -->
+
+        <a
+            class="telegram"
+            href="https://t.me/metaexpert2026"
+            target="_blank"
+            rel="noopener"
+        >
+            🔗 Join Telegram Channel
+        </a>
+
+        <!-- TELEGRAM CHANNEL 2 -->
+
+        <a
+            class="telegram"
+            href="https://t.me/recovery20265"
+            target="_blank"
+            rel="noopener"
+        >
+            ✅ Join Proof Channel
+        </a>
+
+    </div>
+
+    <div class="note">
+        Never share passwords, OTPs, backup codes or
+        recovery codes with anyone.
+    </div>
+
+</section>
+
+<footer>
+
+    © 2026 Account Recovery Hub
+
+    <br><br>
+
+    Independent information page.
+    Not affiliated with Instagram, Snapchat or Google.
+
+</footer>
+
+</div>
+
+</body>
+  </html>
